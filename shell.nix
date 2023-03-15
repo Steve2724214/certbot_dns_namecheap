@@ -1,5 +1,6 @@
-{ pkgs ? import <nixpkgs> {} }:
 let
+  sources = import ./nix/sources.nix;
+  pkgs = import sources.nixpkgs { };
   lexicon = ps: ps.callPackage ./lexicon.nix {};
   python = pkgs.python3.withPackages (p: with p; [
     certbot
