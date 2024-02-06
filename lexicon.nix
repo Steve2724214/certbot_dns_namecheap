@@ -3,7 +3,7 @@
 , pytestCheckHook
 , fetchPypi
 , isPy3k
-, poetry
+, poetry-core
 , beautifulsoup4
 , tldextract
 , requests
@@ -23,7 +23,7 @@ buildPythonPackage rec {
     sha256 = "1cnbwzsf38hhl0pq5pyi35jhq0z99s2b52pfisdpz587jl4680xx";
   };
 
-  nativeBuildInputs = [ poetry ];
+  nativeBuildInputs = [ poetry-core ];
 
   propagatedBuildInputs = [ beautifulsoup4 tldextract pyyaml requests cryptography ];
 
@@ -42,4 +42,3 @@ buildPythonPackage rec {
     license = licenses.mit;
   };
 }
-
