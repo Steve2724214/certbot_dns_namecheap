@@ -33,3 +33,6 @@ tags
 
 # docker files
 .docker
+
+# nix
+result
