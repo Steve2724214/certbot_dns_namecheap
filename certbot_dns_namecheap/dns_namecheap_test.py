@@ -3,7 +3,7 @@
 import os
 import unittest
 
-import mock
+from unittest import mock
 from requests.exceptions import HTTPError
 
 from certbot.plugins import dns_test_common
